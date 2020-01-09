@@ -79,9 +79,9 @@ setInterval(() => {
 //Navbar animation
 
 const $mainBtn = document.querySelector('.section__main-btn');
+const navText = document.querySelector('.nav__title');
 window.addEventListener('load', function() {
   if(window.innerWidth < 1024) {
-    const navText = document.querySelector('.nav__title');
     const navContext = navText.textContent;
     const navLetters = navContext.split('');
     navText.textContent = '';

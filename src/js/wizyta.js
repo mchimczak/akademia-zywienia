@@ -26,6 +26,8 @@ window.addEventListener('resize', () => {
 
 window.addEventListener('load', function() {
   const content = document.querySelector('#mainContent').classList.add('active');
+  const navText = document.querySelector('.nav__title');
+  navText.style.setProperty('opacity', 1);
 })
 
 const $body = document.body.clientHeight;
