@@ -6,13 +6,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {
-        edge: 'right',
-        closOnClick: 'true'
+        edge: 'right'
     });
   });
 
 
 //DOM MANIPULATION
+let windowHeight = window.innerHeight;
+ let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+  if (window.innerHeight !== windowHeight) {
+  vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  onResize()
+  }
+});
 
 window.addEventListener('load', function() {
   const content = document.querySelector('#mainContent').classList.add('active');
