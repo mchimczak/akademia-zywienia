@@ -1,0 +1,72 @@
+h1 {
+    text-transform: uppercase;
+}
+.section__block.img {
+    background-image: url('../img/warsztaty.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
+}
+.section__listItem {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.section__block.content p {
+    margin: 0;
+}
+.section__block-header {
+    margin: 3rem 0;
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        background-color: #1111118c;
+        position: fixed;
+        margin-top: 0;
+    }
+    .nav__link {
+        color: var(--secondary-txt-col);
+    }
+
+    .section.wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+    }
+    .section__block.img {
+        height: auto;
+        background-position-x: 100%;
+        background-size: 50%;
+    }
+    .section__block.content {
+        -webkit-transform: translateX(-30%);
+            -ms-transform: translateX(-30%);
+                transform: translateX(-30%);
+        opacity: 0;
+        -webkit-transition: .5s ease-in;
+        transition: .5s ease-in;
+    }
+    .section__block.content.active {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        text-align: left;
+    }
+    .section__listContent {
+        width: auto;
+    }
+    .section__block.content {
+        text-align: left;
+    }
+}
