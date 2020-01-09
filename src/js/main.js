@@ -1,6 +1,7 @@
 import '../style.css';
 //materialize functions
 document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('body').classList.add('disable-scroll');
     onResize()
 
     var elems = document.querySelectorAll('.sidenav');
@@ -80,7 +81,10 @@ setInterval(() => {
 
 const $mainBtn = document.querySelector('.section__main-btn');
 const navText = document.querySelector('.nav__title');
-window.addEventListener('load', function() {
+window.addEventListener('load', async function() {
+  await document.querySelector('body').classList.remove('disable-scroll');
+  await document.querySelector('.loader__wrapper').style.setProperty('display', 'none');
+
   if(window.innerWidth < 1024) {
     const navContext = navText.textContent;
     const navLetters = navContext.split('');

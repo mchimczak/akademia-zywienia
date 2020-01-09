@@ -2,6 +2,7 @@ import '../style.css';
 import '../css/kontakt.css';
 //materialize functions
 document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('body').classList.add('disable-scroll');
     onResize()
 
     var elems = document.querySelectorAll('.sidenav');
@@ -24,7 +25,9 @@ window.addEventListener('resize', () => {
   }
 });
 
-window.addEventListener('load', function() {
+window.addEventListener('load', async function() {
+  await document.querySelector('body').classList.remove('disable-scroll');
+  await document.querySelector('.loader__wrapper').style.setProperty('display', 'none');
   const content = document.querySelector('#mainContent').classList.add('active');
   const navText = document.querySelector('.nav__title');
   navText.style.setProperty('opacity', 1);
