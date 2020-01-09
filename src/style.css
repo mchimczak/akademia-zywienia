@@ -69,6 +69,7 @@ strong {
             transform: translateX(-50%);
     -webkit-transition: .3s ease;
     transition: .3s ease;
+    opacity: 0;
 }
 .nav__title > span {
     opacity: 0;
@@ -199,6 +200,7 @@ nav .sidenav-trigger i {
             box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     -webkit-transition: .4s ease-in;
     transition: .4s ease-in;
+    opacity: 0;
 }
 .section__main-btn:hover {
     -webkit-box-shadow: inset 0 0px 2px 0 rgba(0,0,0,0.14), inset 0 1px 2px -4px rgba(0,0,0,0.12), inset 0 1px 5px 0 rgba(0,0,0,0.2);

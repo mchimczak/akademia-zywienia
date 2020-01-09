@@ -1,7 +1,9 @@
 h1 {
     text-transform: uppercase;
 }
-
+.nav__title {
+    opacity: 1;
+}
 .section__block.img {
     background-image: url('../img/oferta.png');
     background-size: cover;

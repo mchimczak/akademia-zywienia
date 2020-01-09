@@ -78,12 +78,15 @@ setInterval(() => {
 
 //Navbar animation
 
+const $mainBtn = document.querySelector('.section__main-btn');
 window.addEventListener('load', function() {
   if(window.innerWidth < 1024) {
     const navText = document.querySelector('.nav__title');
     const navContext = navText.textContent;
     const navLetters = navContext.split('');
     navText.textContent = '';
+    navText.style.setProperty('opacity', 1);
+    $mainBtn.style.setProperty('opacity', 1);
 
     for(let i = 0; i < navLetters.length; i++) {
       navText.innerHTML += `<span>${navLetters[i]}</span>`
@@ -105,6 +108,9 @@ window.addEventListener('load', function() {
       clearInterval(timer);
       timer = null;
     }
+  } else {
+    navText.style.setProperty('opacity', 1);
+    $mainBtn.style.setProperty('opacity', 1);
   }
 });
 
