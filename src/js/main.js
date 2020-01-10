@@ -34,7 +34,8 @@ const onResize = () => {
     $mainContentBlock.classList.remove('container'),
     $mainImgBlock.style.height = $body,
     $mainBtnText.textContent = 'Poznaj naszą ofertę!',
-    $mainBtnText.href = './oferta.html'
+    $mainBtnText.href = './oferta.html',
+    $mainBtnText.setAttribute('aria-label', 'Oferta')
     ) : $mainContentBlock.classList.add('container') ;
 }
 
