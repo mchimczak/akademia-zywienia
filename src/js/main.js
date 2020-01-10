@@ -18,7 +18,7 @@ let windowHeight = window.innerHeight;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 window.addEventListener('resize', () => {
-  if (window.innerHeight !== windowHeight) {
+  if (Math.abs(window.innerHeight - windowHeight) > 150 ) {
   vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
   onResize()
