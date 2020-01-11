@@ -147,6 +147,7 @@ nav .sidenav-trigger i {
     background-image: url('./img/logo_text.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     width: 150px;
     height: 200px;
     margin: 0 auto;
@@ -447,7 +448,7 @@ nav .sidenav-trigger i {
     }
     .section__logo {
         display: block;
-        background-image: url('./img//logo_text.png');
+        background-image: url('./img/logo_text.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -506,5 +507,11 @@ nav .sidenav-trigger i {
     }
     .section__block-part {
         margin: 4rem 0;
+    }
+}
+
+@media (hover: none) {
+    .section__block.img {
+        background-attachment: initial;
     }
 }
