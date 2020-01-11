@@ -438,7 +438,7 @@ nav .sidenav-trigger i {
     }
     .section__block.img {
         height: auto;
-        /* background-attachment: fixed; */
+        background-attachment: fixed;
         background-position: initial;
         background-position-y: bottom;
         background-size: 50%;
