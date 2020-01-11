@@ -438,7 +438,7 @@ nav .sidenav-trigger i {
     }
     .section__block.img {
         height: auto;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         background-position: initial;
         background-position-y: bottom;
         background-size: 50%;
@@ -448,7 +448,7 @@ nav .sidenav-trigger i {
     }
     .section__logo {
         display: block;
-        background-image: url('./img//logo_text.png');
+        background-image: url('./img/logo_text.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
