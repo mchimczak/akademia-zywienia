@@ -116,9 +116,9 @@ strong {
 .nav__title {
     position: relative;
     display: inline-block;
-    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Amatic SC', cursive; */
     font-size: 3rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     letter-spacing: 2px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -267,8 +267,8 @@ nav .sidenav-trigger i {
 .section__main-btn a {
     color: var(--secondary-txt-col);
     letter-spacing: 2px;
-    font-family: 'Amatic SC', cursive;
-    font-weight: bold;
+    /* font-family: 'Amatic SC', cursive; */
+    /* font-weight: bold; */
     font-size: 25px;
 }
 .section__block-part {
