@@ -2,7 +2,7 @@ h1 {
     text-transform: uppercase;
 }
 .section__block.img {
-    background-image: url('../img/oferta.png');
+    background-image: url('../img/oferta.jpg');
     background-size: cover;
     background-position: center;
     height: 50vh;

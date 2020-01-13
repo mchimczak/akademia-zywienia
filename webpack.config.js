@@ -66,10 +66,17 @@ module.exports = (env) => {
                     {
                         loader: 'image-webpack-loader',
                         options: {
-                            webp: {
-                                quality: 100,
-                                size: 240000,
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 99
                             },
+                            optipng: {
+                                enabled: false,
+                            },
+                            pngquant: {
+                                quality: [0.95, 0.99],
+                                speed: 1
+                            }
                         }
                     }
                 ],
