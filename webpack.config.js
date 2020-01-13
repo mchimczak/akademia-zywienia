@@ -74,8 +74,8 @@ module.exports = (env) => {
                                 enabled: false,
                             },
                             pngquant: {
-                                quality: [0.85, 0.95],
-                                speed: 2
+                                quality: [0.95, 0.99],
+                                speed: 1
                             }
                         }
                     }
